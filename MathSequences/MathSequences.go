@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	const one, two = 4, 5
+	const one, two = 100, 10
 	fmt.Printf("print GCD for 4 and 5, and fibonacci for 5")
 	//fmt.Fprint(gcd(one, two))
 	fmt.Printf("GCD %d\n", gcd(one, two))
