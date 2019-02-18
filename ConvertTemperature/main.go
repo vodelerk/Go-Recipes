@@ -15,7 +15,7 @@ func main() {
 	fmt.Println(c == f)          // compile error: type mismatch
 	fmt.Println(c == Celsius(f)) // "true"!
 
-	c := FToC(212.0)
+	c := ConvertTemperature.FToC(212.0)
 	fmt.Println(c.String()) // "100°C"
 	fmt.Printf("%v\n", c)   // "100°C"; no need to call String explicitly
 	fmt.Printf("%s\n", c)   // "100°C"
