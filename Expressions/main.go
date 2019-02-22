@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	x := "hello!"
+	x := "changes!"
 	for i := 0; i < len(x); i++ {
 		x := x[i]
 		if x != '!' {
