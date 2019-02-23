@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func main() {
 	//fmt.Print(" ")
@@ -42,5 +45,10 @@ func main() {
 	fmt.Printf("%d %[1]c %[1]q\n", ascii)   // "97 a 'a'"
 	fmt.Printf("%d %[1]c %[1]q\n", unicode) // "22269 D 'D'"
 	fmt.Printf("%d %[1]q\n", newline)       // "10 '\n'"
+
+	//print exponent
+	for x := 0; x < 8; x++ {
+		fmt.Printf("x = %d eA = %8.3f\n", x, math.Exp(float64(x)))
+	}
 
 }
