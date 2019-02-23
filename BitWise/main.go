@@ -51,4 +51,10 @@ func main() {
 		fmt.Printf("x = %d eA = %8.3f\n", x, math.Exp(float64(x)))
 	}
 
+	//test infinites
+	var z float64
+	fmt.Println(z, -z, 1/z, -1/z, z/z) // "0 -0 +Inf -Inf NaN"
+	nan := math.NaN()
+	fmt.Println(nan == nan, nan < nan, nan > nan) // "false false false"
+
 }
