@@ -18,7 +18,7 @@ func main() {
 		fmt.Println()
 	}
 }
-
+//testing
 func basicEcho() {
 	var s, sep string
 	for i := 1; i < len(os.Args); i++ {
